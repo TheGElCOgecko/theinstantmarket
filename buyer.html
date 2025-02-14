@@ -41,11 +41,6 @@
       const resultsDiv = document.getElementById("searchResults");
       resultsDiv.innerHTML = "";
 
-      if (query === "") {
-        alert("Please enter a search query.");
-        return;
-      }
-
       const products = getProducts();
       const matchedProducts = products.filter(product => product.name.toLowerCase().includes(query));
 

@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.pathname.split('/').pop() === 'buyer.html') document.getElementById("searchBtn").click();
+
     // Initialize sessionStorage with default products if not present
     if (!sessionStorage.getItem('products')) {
         const defaultProducts = [
